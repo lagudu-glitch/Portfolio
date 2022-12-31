@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <img class="profPic" src="/images/prof-pic.jpg" alt="prof pic">
+            <div class="userDetails">
+                <h1>Vishnu</h1>
+                <h1>Lagudu</h1>
+                <span>B.S. Computer Engineering '24</span>
+                <span>Elmore Family School of ECE Purdue University</span>
+            </div>
+            <div class="home">
+                <ion-icon name="school-outline"></ion-icon>
+            </div>
+            <div class="projects">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+            </div>
+            <div class="contact">
+                <ion-icon name="mail-outline"></ion-icon>
+            </div>
+        </nav>
+        <div class="school">
+            <div class="exp">
+                <ion-icon name="code-working-outline"></ion-icon>
+                <h2>EXPERIENCE</h2>
+                <button class="toggle" id="exp_btn" onclick="toggle ('exp_div', 'exp_icon')">
+                    <ion-icon id="exp_icon" name="remove-circle-outline"></ion-icon>
+                </button>
+            </div>
+            <div id="exp_div">
+                <h3>Undergraduate Research Assistant (Research 360 VR User Exp)</h3>
+                <p>●	Working with a graduate student and a Professor (Alexander Quinn → http://alexquinn.org/ ) on research in VR.
+                   ●	Was responsible for the dashboard creation of the Research project and Data Visualization.
+                   ●	Individually designed and implemented a website using the flask micro webserver that takes data from server and displays on webpage. (Full-Stack Development)
+                   ●	Created a CAS session that allows authorized users to be able to insert data into the secure database.
+                </p>
+                <h3>Teaching Assistant ECE 270 (Introduction to Digital System Design)</h3>
+                <p>●	Meet up with fellow UTAs and GTAs every week to discuss the course plan for the week
+                   ●	Help students int two divisions of the class during lab time to help with any questions.
+                   ●	Conduct office hours every week.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    <script>
+        function toggle (divId, btnId)
+        {
+            const div = document.getElementById (divId);
+            const btn = document.getElementById (btnId);
+
+            if (div.style.display === "block")
+            {
+                div.style.display = "none";
+                btn.setAttribute ("name", "add-circle-outline");
+            }
+            else
+            {
+                div.style.display = "block";
+                btn.setAttribute ("name", "remove-circle-outline");
+            }
+        }
+    </script>
+
+    {{!-- <script src="script/main.js"></script> --}}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

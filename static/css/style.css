@@ -1,0 +1,116 @@
+body
+{
+    background-color: rgb(153, 141, 141);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.container
+{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+nav
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    height: 150px;
+}
+
+.profPic
+{
+    height: 100%;
+    width: auto;
+}
+
+.userDetails
+{
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+    flex-grow: 2;
+}
+
+.userDetails h1
+{
+    margin: 0;
+    font-size: 28px;
+}
+
+.home
+{
+    background-color: #00C1EA
+}
+
+.projects
+{
+    background-color: #94D401;
+}
+
+.contact
+{
+    background-color: #61B100;
+}
+
+.home,
+.projects,
+.contact
+{
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.home ion-icon,
+.projects ion-icon,
+.contact ion-icon
+{
+    font-size: 100px;
+}
+
+.school
+{
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.exp
+{
+    color: grey;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+
+.exp ion-icon
+{
+    color: black;
+    font-size: 40px;
+}
+
+h2
+{
+    font-size: 20px;
+}
+
+.toggle
+{
+    border: none;
+    font-size: 18px;
+    background-color: white;
+    margin-left: auto;
+}
+
+.toggle:hover
+{
+    color:gray
+}
