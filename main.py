@@ -14,5 +14,10 @@ def home ():
 def Project ():
     return flask.render_template("project.html", title="PROJECTS")
 
+# Route for Blog
+@app.route("/Blog")
+def Blog ():
+    return flask.render_template("blog.html", title="BLOG")
+
 if __name__ == '__main__':
     app.run(debug=True)
