@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="m-6 grid grid-cols-1 gap-2 sm:mx-16 sm:my-12 md:grid-cols-2 lg:mx-32 lg:my-20 xl:gap-10 2xl:mx-80">
+    <div class="px-10 pt-10">
+        <img class="rounded-2xl object-scale-down" src="{{url_for('static', filename='img/profile_pic.jpeg')}}" />
+    </div>
+    <div class="flex flex-col justify-center">
+        <h1 class="my-8 text-4xl font-black sm:mx-12 sm:text-5xl lg:mx-16">
+            Hello! &#128075
+        </h1>
+        <p class="lg:mx-18 mb-2 text-lg sm:mx-8 sm:text-xl">
+            My name is Vishnu Lagudu. I am a student at Purdue University majoring in
+            Computer Engineering expecting to graduate in the Spring of 2024.
+        </p>
+        <p class="lg:mx-18 my-2 text-lg sm:mx-8 sm:text-xl">
+            I am passionate about Computer Architecture and ASIC design and have contributed
+            to open-source digital design through 
+            <a
+            class="text-blue-800 no-underline hover:text-blue-600 hover:underline"
+            href="https://efabless.com/">Efabless</a> and
+            <a
+            class="text-blue-800 no-underline hover:text-blue-600 hover:underline"
+            href="https://theopenroadproject.org/">OpenRoad</a>
+            intiatives.
+        </p>
+        <p class="lg:mx-18 my-2 text-lg sm:mx-8 sm:text-xl">
+            I love to learn and always seek to improve myself as a person and
+            engineer!
+        </p>
+    </div>
+</div>
+<div class="bg-neutral-600 text-neutral-100">
+    <div class="mx-6 py-6 sm:mx-16 sm:py-12 lg:mx-32 lg:py-20 2xl:mx-80">
+        <h1 class="mb-2 text-4xl font-extrabold sm:mb-6 sm:px-10 md:mb-10">
+            Experience
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl">
+            I have worked under <a
+            class="text-blue-300 no-underline hover:text-blue-200 hover:underline"
+            href="http://alexquinn.org/">Prof. Alexander Quinn</a>
+            in the fields of HCI (Human Computer Interaction) and 360° video. I helped 
+            build  models that predict the user head movement in a virtual environment.
+        </p>
+        <p class="mt-6 text-lg sm:text-xl">
+            I am member of Purdue <a
+            class="text-blue-300 no-underline hover:text-blue-200 hover:underline"
+            href="https://engineering.purdue.edu/SoC-Team/about/team">SoCET</a>.
+            During the Spring 2023 semester I worked in a subteam under the leadership of
+            <a
+            class="text-blue-300 no-underline hover:text-blue-200 hover:underline"
+            href="https://www.purdue.edu/discoverypark/nanotechnology/membership/Appenzeller/group.html">Dr. Joerg Appenzeller</a>
+            in collaboration with  <a
+            class="text-blue-300 no-underline hover:text-blue-200 hover:underline"
+            href="https://www.tsmc.com/english">TSMC</a>
+            on <a
+            class="text-blue-300 no-underline hover:text-blue-200 hover:underline"
+            href="https://en.wikipedia.org/wiki/Magnetoresistive_RAM">MRAM</a>
+            technologies. We analyzsed
+            the behavior of data stored in these RAM devices under the influence of a magnetic
+            field by conducting proficient experiments with the help of a microcontroller.
+            Using the data collected we worked towards developing an algorithm that 
+            would detect and counteract the effects of this magnectic field on the data stored.
+        </p>
+        <p class="mt-6 text-lg sm:text-xl">
+            During the summer of 2023 I interned under <a
+            class="text-blue-300 no-underline hover:text-blue-200 hover:underline"
+            href="https://engineering.purdue.edu/Mark-Johnson">Dr. Mark Johnson</a> to
+            structure the <a
+            class="text-blue-300 no-underline hover:text-blue-200 hover:underline"
+            href="https://engineering.purdue.edu/semiconductors/stars">STARS</a> program.
+            I helped develop an RTL and GL(gate-level) verification flow of ASICs with the
+            help of open-source tools like <a
+            class="text-blue-300 no-underline hover:text-blue-200 hover:underline"
+            href="https://yosyshq.net/yosys/">Yosys</a> and 
+            <a
+            class="text-blue-300 no-underline hover:text-blue-200 hover:underline"
+            href="https://github.com/steveicarus/iverilog">Icarus Verilog</a>. 
+            I worked with with a team to help integrate user-projects into the efabless <a
+            class="text-blue-300 no-underline hover:text-blue-200 hover:underline"
+            href="https://github.com/efabless/caravel_user_project">caravel harness</a>.
+        </p>
+    </div>
+</div>
+{% endblock %}
